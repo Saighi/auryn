@@ -67,6 +67,7 @@ public:
 	virtual ~AIFGroup();
 	void set_tau_mem(AurynFloat taum);
 	AurynFloat get_tau_mem();
+	void set_tau_thr(AurynFloat tau);
 	void set_tau_ampa(AurynFloat tau);
 	void set_tau_gaba(AurynFloat tau);
 	void set_tau_nmda(AurynFloat tau);

@@ -175,7 +175,11 @@ void AIFGroup::evolve()
 	integrate_membrane();
 	check_thresholds();
 }
-
+void AIFGroup::set_tau_thr(AurynFloat taum)
+{
+	tau_thr = taum;
+	calculate_scale_constants();
+}
 
 void AIFGroup::set_tau_mem(AurynFloat taum)
 {
